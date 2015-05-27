@@ -9,7 +9,6 @@ argcomplete=0.8.4=py27_0
 astropy=1.0.1=np19py27_0
 bcolz=0.8.1=np19py27_0
 beautiful-soup=4.3.2=py27_0
-binstar=0.10.1=py27_3
 bitarray=0.8.1=py27_0
 blaze-core=0.7.3=np19py27_0
 blz=0.6.2=np19py27_0
