@@ -5,7 +5,7 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem.snowball import SnowballStemmer
 from collections import Counter
-nltk.download('punkt')
+nltk.download('stopwords')
     
 def makeFreq(title,words):
     freq = Counter()
