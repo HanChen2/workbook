@@ -1,12 +1,17 @@
 from flask import Flask, render_template, jsonify, send_file, send_from_directory
 from utilities import load_src
 import os
+import sys
+import logging
 
 # create the application object
 app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 app.template_folder = '.'
 app.debug = True
+app.logger.addHandler(logging.StreamHandler(sys.stdout))
+app.logger.setLevel(logging.ERROR)
+
 
 # save the starting cwd
 basecwd = os.getcwd()
