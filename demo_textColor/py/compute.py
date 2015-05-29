@@ -1,6 +1,8 @@
 import json
+import nltk
 from nltk.tokenize import word_tokenize
 from collections import Counter
+nltk.download('punkt')
 
 def makeFreq(textFile,colorNames):
     textRaw = open(textFile).read()
