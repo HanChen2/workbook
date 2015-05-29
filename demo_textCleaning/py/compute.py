@@ -1,9 +1,11 @@
 import json
 import re
+import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem.snowball import SnowballStemmer
 from collections import Counter
+nltk.download('punkt')
     
 def makeFreq(title,words):
     freq = Counter()
