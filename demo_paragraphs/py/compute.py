@@ -1,5 +1,6 @@
 import json
 import re
+import nltk
 from nltk.tokenize import word_tokenize
 from nltk.tokenize import TextTilingTokenizer
 from nltk.corpus import stopwords
@@ -7,6 +8,7 @@ from nltk.stem.snowball import SnowballStemmer
 from collections import Counter
 from collections import defaultdict
 from math import log, sqrt
+nltk.download('stopwords')
 
 def cosSim(a, b): 
     #parameters are dictionaries of tfidf measures for words
