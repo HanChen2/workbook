@@ -9,6 +9,7 @@ from collections import Counter
 from collections import defaultdict
 from math import log, sqrt
 nltk.download('stopwords')
+nltk.download('punkt')
 
 def cosSim(a, b): 
     #parameters are dictionaries of tfidf measures for words
